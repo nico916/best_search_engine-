@@ -21,17 +21,6 @@ python3 search_engine.py -h
 
 ---
 
-
-The following commands correspond to the four scenarios described in our project report:
-
-    Scenario A: python3 search_engine.py --mode test --preprocessing lemmatization
-
-    Scenario B: python3 search_engine.py --mode test --preprocessing stemming
-
-    Scenario C: python3 search_engine.py --mode test --custom_vectorizer --preprocessing lemmatization
-
-    Scenario D: python3 search_engine.py --mode test --custom_vectorizer --preprocessing stemming
-
 ## 🧪 Tested scenarios
 
 | ID | Vectorizer      | Pre-process | Top 1 Accuracy | Top 5 Accuracy |
@@ -41,12 +30,16 @@ The following commands correspond to the four scenarios described in our project
 | C  | custom          | lemma       | **81 %**       | **97 %** |
 | D  | custom          | stem        | **85 %**       | **97 %** |
 
-Example:
+You can reproduce a scenario with:
 
-```bash
-# scenario B : scikit-learn + stemming
-python3 search_engine.py --mode test --preprocessing stemming
-```
+    Scenario A: python3 search_engine.py --mode test --preprocessing lemmatization
+
+    Scenario B: python3 search_engine.py --mode test --preprocessing stemming
+
+    Scenario C: python3 search_engine.py --mode test --custom_vectorizer --preprocessing lemmatization
+
+    Scenario D: python3 search_engine.py --mode test --custom_vectorizer --preprocessing stemming
+
 
 ---
 
