@@ -5,21 +5,6 @@ A tiny Python search engine that indexes **2 000 French-language Wikipedia artic
 
 ---
 
-## 🚀 Quick start
-
-```bash
-# 1) Install dependencies
-pip install -r requirements.txt   # std. scientific stack: numpy, scikit-learn, spacy, nltk …
-
-# 2) Build the index + run the 100-query benchmark
-python3 search_engine.py --mode test
-
-# 3) Or switch to interactive mode
-python3 search_engine.py --mode query
-```
-
----
-
 ## 🖥️ CLI options
 
 ```bash
@@ -35,6 +20,17 @@ python3 search_engine.py -h
 | `--verbosity {0,1,2}`                            | `1`           | 0 = errors only · 2 = full log                                          |
 
 ---
+
+
+The following commands correspond to the four scenarios described in our project report:
+
+    Scenario A: python3 search_engine.py --mode test --preprocessing lemmatization
+
+    Scenario B: python3 search_engine.py --mode test --preprocessing stemming
+
+    Scenario C: python3 search_engine.py --mode test --custom_vectorizer --preprocessing lemmatization
+
+    Scenario D: python3 search_engine.py --mode test --custom_vectorizer --preprocessing stemming
 
 ## 🧪 Tested scenarios
 
